@@ -7,7 +7,7 @@
 
 *A classic arcade-style flapping game built with modern web technologies.*
 
-**Play the live game here: https://retro-flapper.netlify.app/** (You'll need to add this link after you deploy it!)
+**Play the live game here: https://retro-flapper.netlify.app/**
 
 ---
 
