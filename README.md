@@ -1,7 +1,6 @@
 # Retro Flapper
 
-![Retro Flapper Gameplay]([[https://placehold.co/800/400.png](https://drive.google.com/file/d/1pp8T03hVAHfmS07GC1fVACpSESqses9d/view?usp=drive_link)](https://drive.google.com/file/d/1pp8T03hVAHfmS07GC1fVACpSESqses9d/view?usp=drive_link)?text=Retro+Flapper+Gameplay)
-![Retro Flapper Gameplay]([https://placehold.co/800/400.png](https://drive.google.com/file/d/1pp8T03hVAHfmS07GC1fVACpSESqses9d/view?usp=drive_link)?text=Retro+Flapper+Gameplay)
+
 *A classic arcade-style flapping game built with modern web technologies.*
 
 **Play the live game here: [Link to Deployed Game]** (You'll need to add this link after you deploy it!)
