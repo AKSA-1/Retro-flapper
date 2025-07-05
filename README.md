@@ -1,8 +1,8 @@
 # Retro Flapper
 <p align="center">
-  <img src="images/start.png" width="200px" alt="Start">
-  <img src="images/game.png" width="200px" alt="Game">
-    <img src="images/gameover.png" width="200px" alt="Gameover">
+  <img src="images/start.png" width="30%" alt="Start">
+  <img src="images/game.png" width="30%" alt="Game">
+    <img src="images/gameover.png" width="30%" alt="Gameover">
 </p>
 
 *A classic arcade-style flapping game built with modern web technologies.*
