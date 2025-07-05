@@ -1,6 +1,8 @@
 # Retro Flapper
+![start](images/start.png)
 ![game](images/game.png)
-![Screenshot](images/screenshot.jpg)
+![gameover](images/gameover.png)
+
 
 *A classic arcade-style flapping game built with modern web technologies.*
 
