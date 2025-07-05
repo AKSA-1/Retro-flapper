@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 196 78% 83%; /* Sky Blue */
+    --foreground: 222.2 84% 4.9%;
+    --card: 120 33% 91%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 120 33% 91%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 90 100% 50%; /* Retro green */
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 120 20% 85%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --muted: 120 20% 85%;
+    --muted-foreground: 222.2 40% 30%;
+    --accent: 181 100% 74%; /* Electric blue */
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 120 20% 80%;
+    --input: 120 20% 80%;
+    --ring: 90 100% 50%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 90 100% 50%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 181 100% 74%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 181 100% 74%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .bg-sky {
+    background: linear-gradient(to bottom, #87CEEB, #f0f8ff);
+  }
+
+  .bg-volcano {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    width: 200%;
+    height: 300px;
+    background: url('data:image/svg+xml;utf8,<svg width="800" height="300" xmlns="http://www.w3.org/2000/svg"><path d="M0 300 L200 150 L250 180 L300 100 L350 150 L400 120 L500 200 L550 180 L600 250 L800 300 Z" fill="%23696969"/><path d="M280 100 L300 80 L320 100" fill="%23ff4500" /></svg>') repeat-x;
+    background-size: 800px 300px;
+    animation: move-bg 80s linear infinite;
+    z-index: 1;
+  }
+
+  .bg-cold-mountains {
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    width: 200%;
+    height: 250px;
+    background: url('data:image/svg+xml;utf8,<svg width="800" height="250" xmlns="http://www.w3.org/2000/svg"><path d="M0 250 L100 100 L150 150 L200 80 L250 120 L300 50 L350 100 L450 20 L500 80 L600 120 L700 80 L800 250 Z" fill="%23A9A9A9"/><path d="M100 100 L110 110 L90 110 Z" fill="white"/><path d="M200 80 L210 90 L190 90 Z" fill="white"/><path d="M300 50 L310 60 L290 60 Z" fill="white"/><path d="M450 20 L460 30 L440 30 Z" fill="white"/></svg>') repeat-x;
+    background-size: 800px 250px;
+    animation: move-bg 60s linear infinite;
+    z-index: 2;
+  }
+
+  .bg-mountains {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 200%;
+    height: 200px;
+    background: url('data:image/svg+xml;utf8,<svg width="800" height="200" xmlns="http://www.w3.org/2000/svg"><path d="M0 200 L50 150 L150 180 L250 100 L350 160 L450 120 L550 180 L650 140 L800 200 Z" fill="%232F4F4F"/></svg>') repeat-x;
+    background-size: 800px 200px;
+    animation: move-bg 40s linear infinite;
+    z-index: 3;
+  }
+  
+  .bg-hills {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 200%;
+    height: 150px;
+    background: url('data:image/svg+xml;utf8,<svg width="800" height="150" xmlns="http://www.w3.org/2000/svg"><path d="M0 150 C 150 50, 250 50, 400 150 S 650 250, 800 150 L800 150 L0 150 Z" fill="%23228B22"/></svg>') repeat-x;
+    background-size: 800px 150px;
+    animation: move-bg 20s linear infinite;
+    z-index: 4;
+  }
+
+  @keyframes move-bg {
+    from { transform: translateX(0); }
+    to { transform: translateX(-800px); }
+  }
+}
